@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Josefin Sans', sans-serif;
+}
+
+.digital-clock {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: auto;
+  
+}
+
+.header {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 3em;
+  text-align: center;
+  color: blanchedalmond;
+}
+
+.clock-wrapper {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.clock-item {
+  padding: 8px;
+  font-size: 2em;
+  color: #ffffff;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.596);
+  opacity: .7;
+  background-color: #000000;
+  border-radius: 8px;
+}
+
+.clock-item span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-item .text {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.5em;
+  margin-top: 10px;
+}
+
+.clock-item:last-child {
+  background-color: beige;
+  color: rgb(168, 123, 55);
+  opacity: .8;
+  align-self: center;
+}
