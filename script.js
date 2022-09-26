@@ -14,6 +14,10 @@ function updateClock() {
     amPm = "PM";
   }
 
+  hour = hour < 10 ? '0' + hour : hour;
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  secondes = secondes < 10 ? '0' + secondes : secondes;
+
   hourElement.innerText = hour;
   minutesElement.innerText = minutes;
   secondsElement.innerText = secondes;
